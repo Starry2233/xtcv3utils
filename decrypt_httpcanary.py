@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""解密 HttpCanary 抓包文件
+"""
+DISCLAIMER: This script is for authorized security research and SDK
+integration testing only. 本脚本仅供授权安全研究和 SDK 集成测试使用。
+
+解密 HttpCanary 抓包文件
 
 用法:
     python decrypt_httpcanary.py <prefix> --aes KEY

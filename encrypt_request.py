@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""加密 V3 请求
+"""
+DISCLAIMER: This script is for authorized security research and SDK
+integration testing only. 本脚本仅供授权安全研究和 SDK 集成测试使用。
+
+加密 V3 请求
 
 用法:
     # 查看从抓包提取的信息
@@ -54,7 +58,7 @@ def main():
     enc.add_argument("prefix", help="文件前缀（用于提取 eebbk_key/key_id）")
     enc.add_argument("--aes", required=True, help="AES 密钥")
     enc.add_argument("--json", required=True, help="要发送的 JSON 字符串")
-    enc.add_argument("--url", default="https://moment.watch.okii.com/moment/public", help="请求 URL")
+    enc.add_argument("--url", default="<paste your api url e.g. moment.watch.okii.com/moment/public>", help="请求 URL")
 
     args = parser.parse_args()
     dir_path = os.path.dirname(__file__) or "."

@@ -1,3 +1,19 @@
+/*
+ * Frida hook script for SDK key dumping
+ *
+ * DISCLAIMER:
+ * This script is intended ONLY for:
+ *   - App store reviewers / developers to understand SDK encryption principles
+ *   - Security research with authorized devices
+ *   - Educational purposes
+ *
+ * Any use for unauthorized access to services, user data theft, or
+ * commercial exploitation is strictly prohibited.
+ *
+ * 本脚本仅供应用商店开发者/审核人员了解 SDK 加密原理使用，
+ * 禁止用于任何未授权访问、用户数据窃取或商业用途。
+ */
+
 Java.perform(function() {
     var AppInfo = Java.use("com.xtc.httplib.bean.AppInfo");
 
@@ -12,7 +28,6 @@ Java.perform(function() {
         console.log("");
     };
 
-    // 顺便也 dump 一下 selfRsaKey，万一它是 v2
     AppInfo.setSelfRsaPublicKeyAndId.implementation = function(str) {
         this.setSelfRsaPublicKeyAndId(str);
         console.log("[selfRsaKey] keyId: " + this.keyId.value);
