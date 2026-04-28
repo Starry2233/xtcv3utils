@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xtcv3utils"
+version = "1.0.0"
+description = "XTC V3 API Encryption/Decryption utilities (reverse-engineered from com.xtc.moment)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["xtc", "moment", "encryption", "v3", "api"]
+authors = [
+    {name = "xtcv3utils contributors"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security :: Cryptography",
+]
+dependencies = [
+    "pycryptodome>=3.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/xtcv3utils"
+Repository = "https://github.com/yourusername/xtcv3utils"
