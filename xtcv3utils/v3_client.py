@@ -2,10 +2,6 @@
 V3 加密客户端
 
 封装完整的 V3 请求加密和响应解密逻辑。
-对应 Android:
-  - com.xtc.httplib.okhttp.HttpRequestInterceptor (请求加密)
-  - com.xtc.httplib.okhttp.HttpHelper (工具方法)
-  - com.xtc.httplib.bean.NetBaseRequestParam (基础参数)
 """
 
 import json as json_lib

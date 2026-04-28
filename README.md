@@ -1,8 +1,8 @@
 # xtcv3utils
 
-XTC V3 API 加密/解密工具 — 逆向自 Android **com.xtc.moment** (小天才电话手表) 的 V3 加密方案。
+XTC V3 API 加密/解密工具
 
-Reverse-engineered V3 API encryption/decryption utilities for XTC Moment smartwatch app.
+V3 API encryption/decryption utilities (protocol implementation for XTC services).
 
 ## 安装 / Install
 

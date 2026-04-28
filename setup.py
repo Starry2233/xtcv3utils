@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="xtcv3utils",
     version="1.0.0",
-    description="XTC V3 API Encryption/Decryption Utils (逆向自 XTC Moment App)",
+    description="XTC V3 API Encryption/Decryption Utils",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     packages=find_packages(),

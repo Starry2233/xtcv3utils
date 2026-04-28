@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "xtcv3utils"
 version = "1.0.0"
-description = "XTC V3 API Encryption/Decryption utilities (reverse-engineered from com.xtc.moment)"
+description = "XTC V3 API Encryption/Decryption utilities"
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
